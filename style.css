@@ -1,0 +1,27 @@
+body {
+    background-color: #bc4749;
+}
+
+.atma-regular {
+    font-family: "Atma", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.container {
+    background-color: #f2e8cf;
+    padding: 25px;
+    margin: 0 auto;
+}
+
+.descriptive-text {
+    display:flex;
+
+    justify-content: center;
+    flex-direction: column;
+}
+/*
+.user-input {
+    justify-content: center;
+    flex-direction: row;
+}*/
