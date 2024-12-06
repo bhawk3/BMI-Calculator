@@ -23,12 +23,14 @@
         </span>
         <span class="user-input">
             <label>Height:</label>
-            <input class="height" type="number">
+            <input id="height-feet" type="number" placeholder="Feet">
+            <input id="height-inches" type="number" placeholder="Inches">
+
 
             <label>Weight:</label>
-            <input class="weight" type="number">
-
-            <button class="calculate-btn">Calculate</button>
+            <input id="weight-pounds" type="number" placeholder="Pounds">
+            <br>
+            <button id="calculate-btn" onclick="calculateBMI()">Calculate</button>
         </span>
         
         <p class="output"></p>
