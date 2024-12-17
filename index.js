@@ -16,15 +16,29 @@ For example, if someone weighs 180 lbs and is 5'5" (65 in total), their BMI woul
 // Divide the quotient of the above step again by combinedHeight to receive BMI
 // Display BMI to the user
 
-
-let heightFeet = document.getElementsById("height-feet")
-let heightInches = document.getElementById("height-inches")
-let weight = document.getElementById("weight-pounds")
-
-
 function calculateBMI() {
+    let heightFeet = document.getElementById("height-feet").value
+    let heightInches = document.getElementById("height-inches").value
+    let weight = document.getElementById("weight-pounds").value
+    let output = document.getElementById("bmi-output")
+
+   let  convertedHeightFeetToInches = heightFeet * 12 
+   let combinedHeight = convertedHeightFeetToInches + heightInches
+   let weightMultiplied = weight * 703
+
+  let firstWeightQuotient =  weightMultiplied / combinedHeight
+let secondWeightQuotient = firstWeightQuotient / combinedHeight
+
+    output.textContent = `Your body mass index is ${secondWeightQuotient.toFixed(1)}% `
+} 
 
 
+/* example 5 ft 4in 145lbs
 
 
-}
+5*12 = 60
+60+3= 63
+145*703= 101,935
+101935/63 = 1618.01587
+
+*/
